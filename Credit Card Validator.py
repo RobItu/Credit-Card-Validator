@@ -4,7 +4,7 @@
 #       IF doubling of a number results in a number greater than 9, add the additional digits together.
 #       Sum up all of the digits (original un-doubled plus the doubled)
 #       If the total number is equal to 10 then the card is VALID
-CCNumber = 123456798
+CCNumber = 4809901048221026
 CCNumber2=str(CCNumber)
 IndexLength = int(len(CCNumber2)-1)
 i=0
