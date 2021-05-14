@@ -6,10 +6,10 @@
 #       If the total number is equal to 10 then the card is VALID
 CCNumber = 123456798
 CCNumber2=str(CCNumber)
-IndexLength = int(len(CCNumber2))
-i=1
+IndexLength = int(len(CCNumber2)-1)
+i=0
 for test in CCNumber2:
-    print(CCNumber2[i])
+    print(CCNumber2[i+1])
     i+=2
     if i==IndexLength:
         break
