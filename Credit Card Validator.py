@@ -6,7 +6,7 @@
 #       If the total number is equal to 10 then the card is VALID
 CCNumber = int(input('Please input a Credit Card Number'))
 CCNumber2=str(CCNumber)
-IndexLength = int(len(CCNumber2)-1)
+IndexLength = int(len(CCNumber2)-2)
 i=0
 for test in CCNumber2:
     print(CCNumber2[i])
