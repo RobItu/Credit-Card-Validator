@@ -9,7 +9,8 @@ CCNumber2=str(CCNumber)
 IndexLength = int(len(CCNumber2)-1)
 i=0
 for test in CCNumber2:
-    print(CCNumber2[i+1])
-    i+=2
+    print(CCNumber2[i])
     if i==IndexLength:
         break
+    else:
+        i+=2
