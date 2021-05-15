@@ -7,7 +7,8 @@
 CCNumber = input('Please Input a Credit Card number\n')
 CCNumber2=str(CCNumber)
 IndexLength = int(len(CCNumber2)+1)
-#=======================================================
+InputLength = len(CCNumber2)
+if InputLength ==
 i=0
 Total = 0
 for OddDigit in CCNumber2:
