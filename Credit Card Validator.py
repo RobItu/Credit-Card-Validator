@@ -9,6 +9,7 @@ CCNumber2=str(CCNumber)
 IndexLength = int(len(CCNumber2)-2)
 #=======================================================
 i=0
+Total = 0
 for OddDigit in CCNumber2:
     if i==IndexLength:
         break
@@ -21,3 +22,4 @@ for OddDigit in CCNumber2:
     else:
         print(CCNumber2[i])
         i+=2
+print('Total is '+OddDigit)
