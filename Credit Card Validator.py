@@ -17,11 +17,27 @@ for OddDigit in CCNumber2:
         Niners = int(CCNumber2[i]) + int(CCNumber2[i])
         Double = str(Niners)
         Add = int(Double[0])+int(Double[1])
-        #print(Add)
+        print(Add)
         Total += int(Add)
         i += 2
     else:
-        #print(CCNumber2[i])
+        print(CCNumber2[i])
         Total+=int(CCNumber2[i])
         i+=2
 print('Total is '+ str(Total))
+#=================================================================
+#Adding single digits
+i=1
+Total2=0
+for EvenDigits in CCNumber2:
+    if i == IndexLength:
+        break
+    else:
+        print(CCNumber2[i])
+        Total2 += int(CCNumber2[i])
+        i+=2
+print('Single Digit Total is: ' + str(Total2))
+#==================================================================
+#Adding total of Even and Odd digits
+Total3 = Total + Total2
+print(Total3)
