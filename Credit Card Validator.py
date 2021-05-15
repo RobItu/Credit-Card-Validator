@@ -1,3 +1,5 @@
+import datetime
+from datetime import date
 #Validate a credit card using Luhn Algorithm
 #Rules: 16 number credit card
 #       Starting from the rightmost digit, double the value of every SECOND digit
@@ -6,6 +8,7 @@
 #       If the total number is equal to 10 then the card is VALID
 CCNumber = input('Please Input a Credit Card number\n')
 CCDate = input('Good through date?')
+Today = date.today()
 
 #*************************************************************************************************
 #____Code for 16-digit number validation___
@@ -44,6 +47,7 @@ if CCNumber.isnumeric():
         Total3 = Total + Total2
         if Total3%10==0:
             print('Congratulations, your CC is valid!')
+            print("Today's date is : " + str(Today))
         else:
             print('Unfortunately your CC is NOT valid')
     else:
