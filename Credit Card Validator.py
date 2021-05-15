@@ -5,6 +5,10 @@
 #       Sum up all of the digits (original un-doubled plus the doubled)
 #       If the total number is equal to 10 then the card is VALID
 CCNumber = input('Please Input a Credit Card number\n')
+CCDate = input('Good through date?')
+
+#*************************************************************************************************
+#____Code for 16-digit number validation___
 if CCNumber.isnumeric():
     CCNumber2=str(CCNumber)
     IndexLength = int(len(CCNumber2)+1)
@@ -25,7 +29,7 @@ if CCNumber.isnumeric():
             else:
                 Total+=int(CCNumber2[i])*2
                 i+=2
-#=================================================================
+        #------------------------------------------------
         #Adding single digits
         i=1
         Total2=0
@@ -35,7 +39,7 @@ if CCNumber.isnumeric():
             else:
                 Total2 += int(CCNumber2[i])
                 i+=2
-        #==================================================================
+        #--------------------------------------------------
         #Adding total of Even and Odd digits
         Total3 = Total + Total2
         if Total3%10==0:
@@ -46,3 +50,5 @@ if CCNumber.isnumeric():
         print('Unfortunately your CC is NOT valid')
 else:
     print("I'm sorry, that is not a valid input. Please input a 16 digit Credit Card Number")
+#******************************************************************************************************************
+#________Date verification________
