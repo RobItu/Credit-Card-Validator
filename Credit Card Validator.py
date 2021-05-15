@@ -22,7 +22,7 @@ for OddDigit in CCNumber2:
         i += 2
     else:
         print(CCNumber2[i])
-        Total+=int(CCNumber2[i])
+        Total+=int(CCNumber2[i])*2
         i+=2
 print('Total is '+ str(Total))
 #=================================================================
