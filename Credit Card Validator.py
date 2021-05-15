@@ -17,9 +17,11 @@ for OddDigit in CCNumber2:
         Niners = int(CCNumber2[i]) + int(CCNumber2[i])
         Double = str(Niners)
         Add = int(Double[0])+int(Double[1])
-        print(Add)
+        #print(Add)
+        Total += int(Add)
         i += 2
     else:
-        print(CCNumber2[i])
+        #print(CCNumber2[i])
+        Total+=int(CCNumber2[i])
         i+=2
-print('Total is '+OddDigit)
+print('Total is '+ str(Total))
