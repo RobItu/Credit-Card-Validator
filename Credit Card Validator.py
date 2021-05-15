@@ -10,13 +10,14 @@ IndexLength = int(len(CCNumber2)-2)
 #=======================================================
 i=0
 for OddDigit in CCNumber2:
-    OddDigit=int(CCNumber2[i])+int(CCNumber2[i])
-    length = int(len(CCNumber2[i]))
     print(OddDigit)
+    length = int(len(OddDigit))
     if i==IndexLength:
         break
-    elif length>0:
-        print('STOP')
+    elif length>1:
+        print('TEST')
+        break
     else:
+        OddDigit = int(CCNumber2[i]) + int(CCNumber2[i])
         i+=2
 #======================================================
