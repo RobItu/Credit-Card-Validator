@@ -8,10 +8,11 @@
 Counter = 1
 while Counter <4:
     CCNumber = input('Please Input a 16 digit Credit Card number\n')
-    if CCNumber.isnumeric():
-        CCNumber2=str(CCNumber)
-        IndexLength = int(len(CCNumber2)+1)
-        InputLength = len(CCNumber2)
+    CCNumber2 = str(CCNumber)
+    InputLength = int(len(CCNumber2))
+    IndexLength = int(len(CCNumber2) + 1)
+    if CCNumber.isnumeric() and InputLength>13:
+
         if InputLength%2==0:
             i=0
             Total = 0
@@ -86,9 +87,14 @@ while Counter <4:
             Total3 = Total + Total2
             if Total3 % 10 == 0:
                 print('Congratulations, your CC is valid!')
+                break
             else:
                 print('Unfortunately your CC is NOT valid')
+                break
     else:
         print("I'm sorry, that is not a valid input.")
-        #Attempt = input('You have ' + Left + ' attempts left')
+        Left = 3 - Counter
+        print('You have ' + str(Left) + ' attempt(s) left\n')
+        if Left <1:
+            print('You have no more attempts left, goodbye!\n')
         Counter +=1
