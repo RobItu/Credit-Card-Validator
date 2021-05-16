@@ -4,10 +4,10 @@
 #       IF doubling of a number results in a number greater than 9, add the additional digits together.
 #       Sum up all of the digits (original un-doubled plus the doubled)
 #       If the total number is equal to 10 then the card is VALID
-CCNumber = input('Please Input a Credit Card number\n')
+
 Counter = 1
 while Counter <4:
-
+    CCNumber = input('Please Input a Credit Card number\n')
     if CCNumber.isnumeric():
         CCNumber2=str(CCNumber)
         IndexLength = int(len(CCNumber2)+1)
@@ -88,5 +88,5 @@ while Counter <4:
                 print('Unfortunately your CC is NOT valid')
     else:
         print("I'm sorry, that is not a valid input. Please input a 16 digit Credit Card Number")
-        Counter +=1
         #Attempt = input('You have ' + Left + ' attempts left')
+Counter +=1
