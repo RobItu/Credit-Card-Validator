@@ -95,4 +95,6 @@ while Counter <4:
         print("I'm sorry, that is not a valid input.")
         Left = 3 - Counter
         print('You have ' + str(Left) + ' attempt(s) left\n')
+        if Left <1:
+            print('You have no more attempts left, goodbye!\n')
         Counter +=1
